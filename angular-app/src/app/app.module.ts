@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {EmptyRouteComponent} from './empty-route/empty-route.component';
+import { SomethingComponent } from './something/something.component';
+import { OtherComponent } from './other/other.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmptyRouteComponent
+    EmptyRouteComponent,
+    SomethingComponent,
+    OtherComponent
   ],
   imports: [
     BrowserModule,
