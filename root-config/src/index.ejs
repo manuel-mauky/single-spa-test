@@ -79,8 +79,18 @@
         <application name="@<%- orgName %>/navbar"></application>
       </nav> -->
       <nav>
-        <a href="/react">React</a>
-        <a href="/angular">Angular</a>
+        <h3>Routes</h3>
+        <ul>
+            <li>
+                <a href="/react">React</a>
+            </li>
+            <li>
+                <a href="/angular">Angular</a>
+            </li>
+            <li>
+                <a href="/combined">Combined on one Page</a>
+            </li>
+        </ul>
       </nav>
       <main>
         <route default>
@@ -91,6 +101,20 @@
         </route>
         <route path="angular">
           <application name="@zdi/angular-app"></application>
+        </route>
+        <route path="combined">
+           <div>
+            <h1>React and Angular combined on one page</h1>
+
+            <div style="display:flex; justify-content: center">
+                <div style="flex-grow: 1" id="react_content">
+                    <application name="@zdi/react-app"></application>
+                </div>
+                <div style="flex-grow: 1" id="angular_content">
+                    <application name="@zdi/angular-app"></application>
+                </div>
+            </div>
+           </div>
         </route>
       </main>
     </single-spa-router>
