@@ -51,6 +51,7 @@
       "imports": {
         "@zdi/react-app": "//localhost:7000/zdi-react-app.js",
         "@zdi/angular-app": "//localhost:4200/main.js",
+        "@zdi/angular-legacy-app": "//localhost:4201/main.js",
         "@zdi/root-config": "//localhost:8000/zdi-root-config.js"
       }
     }
@@ -90,6 +91,9 @@
             <li>
                 <a href="/combined">Combined on one Page</a>
             </li>
+            <li>
+                <a href="/angular-legacy">Angular Legacy</a>
+            </li>
         </ul>
       </nav>
       <main>
@@ -115,6 +119,9 @@
                 </div>
             </div>
            </div>
+        </route>
+        <route path="angular-legacy">
+          <application name="@zdi/angular-legacy-app"></application>
         </route>
       </main>
     </single-spa-router>
