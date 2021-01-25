@@ -1,5 +1,3 @@
-import React, {FC} from 'react'
+import React, { FC } from "react";
 
-export const Something: FC = () => (
-    <p>React Page: Something</p>
-)
+export const Something: FC = () => <p>React Page: Something</p>;
